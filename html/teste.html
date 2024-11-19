@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//ex1 Peça o nome do usuário e exiba uma mensagem de boas-vindas na tela.
+
+let nomeUsuario = prompt("Qual é o seu nome?");
+
+alert("Olá, " + nomeUsuario + "! Seja bem-vindo ao JavaScript!");
+console.log("O usuário digitou o nome:", nomeUsuario);
+
+
+//ex2 Solicite dois números ao usuário, calcule a soma deles e mostre o resultado.
+
+
+let numero1 = prompt("Qual é o numero 1?");
+let numero2 = prompt("Qual é o numero 2?");
+
+numero1 = Number(numero1);
+numero2 = Number(numero2);
+
+let soma = numero1 + numero2;
+
+alert("A soma de " + numero1 + " e " + numero2 + " é: " + soma);
+console.log("Resultado da soma:", soma);
+
+
+//ex3 Peça ao usuário o ano atual e o ano de nascimento, calcule sua idade e exiba o resultado.
+
+let ano = prompt("Qual é o ano atual?");
+let ano_nascimento = prompt("Qual é o seu ano de nascimento?");
+
+ano = Number(ano);
+ano_nascimento = Number(ano_nascimento);
+
+let menos= ano - ano_nascimento;
+
+alert("A subtração de " + ano + " e " + ano_nascimento + " é: " + menos);
+alert("Resultado da subtração:" + menos);
+
+
+
+//ex4 Pergunte ao usuário quantos sorvetes ele quer comprar e o preço de cada um, calcule o valor total da compra e mostre na tela.
+
+let quantidade = prompt ("Quantos sorvetes vai querer?")
+let preco = prompt ("Qual é o preço de cada sorvete?")
+let total = number (quantidade) * number(preco);1
+alert(`o total da compra é: R$${total.toFixed(2)}`)
+
+
+//ex5 Escolha um número secreto fixo. Pergunte ao usuário um número e mostre o número secreto junto com o número que ele chutou.
+
+
+
+let numeroSecreto = 7;
+let chute = prompt ("Advinhe o número secreto (entre 1 e 18):");
+alert (`o número secreto era ${numeroSecreto}, você chutou ${chute}.`);
+
+//ex6 Peça dois números ao usuário e exiba os dois números que ele informou.
+
+let numero1Exibicao = prompt ("Digite o primeiro número:");
+let numero2Exibicao = prompt ("Digite o segundo número");
+alert(`Você digitou os números ${numero1Exibicao} e ${numero2Exibicao}.`);
+
+
+//ex7 Peça ao usuário o valor da conta e a porcentagem de gorjeta desejada. Calcule o valor da gorjeta e o total da conta e mostre na tela.
+
+let valorConta = number("Qual o valor da conta?")
+let gorjeta1 = number("Qual a porcentagem da gorjeta?")
+let gorjeta = valorConta * gorjeta1/100
+let Total = number(valorConta) + (gorjeta)
+alert(` o valor da gorjeta é R$${gorjeta.toFixed(2)}. o total a pagar é R$${totalConta.toFixed(2)}.`);
+
+
+//ex8 Peça dois números ao usuário, calcule a multiplicação deles e exiba o resultado no console.
+
+let numeroo = number("Qual o primeiro número?")
+let numerooo = number("Qual o segundo número?")
+console.log (numeroo * numerooo)
+
+//ex9 Pergunte ao usuário seu nome, o ano atual e quantos anos ele quer adicionar. Calcule e exiba o ano futuro.
+
+let nomeFutro = prompt("Qual é seu nome?");
+let anoAtualFuturo = prompt("Digite o ano atual:");     
+
+//ex10 Peça ao usuário uma nota e mostre na tela a nota digitada.
+
+let nota = prompt("Digite a nota do aluno:");
+alert(`A nota digitalizada foi:${nota}`);
+
+
+
+
+//DESAFIO 1
+ let produto = prompt("Digite o nome do produto")
+ let quantia = number("Digite a quantidade desejada")
+ let preco_unit = number("Digite o valor unitario")
+ alert(`Você comprou ${quantia} de ${produto} por ${preco_unit} o total é de ${quantia*preco_unit}`)
+console.log(`Você comprou ${quantia} de ${produto} por ${preco_unit} o total é de ${quantia*preco_unit}`)
+
+
+
+
+//DESAFIO 2
+
+let disciplina = prompt("Qual o nome da disciplina?")
+let nota1 = number("Qual a primeira nota?")
+let nota2 = number("Qual a segunda nota?")
+let nota3 = number("Qual a terceira nota?")
+let media = (nota1 + nota2 + nota3)/3
+alert(`o nome da disciplina é ${disciplina} as notas digitadas foram ${nota1} ${nota2} ${nota3} e a média calculada foi de ${media}`) 
+
+
+
+
+    </script>
+</body>
+
+<script src="script.js"></script>
+
+</html>
